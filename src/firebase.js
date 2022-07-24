@@ -6,7 +6,7 @@ import { getAuth } from "firebase/auth";
 console.log(process.env)
 
 const firebaseConfig = {
-  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  apiKey:`${process.env.REACT_APP_API_KEY}`,
   authDomain: "authentication-e76ce.firebaseapp.com",
   projectId: "authentication-e76ce",
   storageBucket: "authentication-e76ce.appspot.com",

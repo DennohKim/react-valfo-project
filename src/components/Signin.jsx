@@ -15,7 +15,7 @@ const Signin = () => {
     setError('')
     try {
      await signIn(email, password)
-     navigate('/account')
+     navigate('/home')
 
     } catch (error) {
         setError(error.message)
@@ -45,7 +45,7 @@ const Signin = () => {
           <input onChange={(e) => setPassword(e.target.value)} className="border p-3" type="password" />
         </div>
         <button className="border border-blue-500 bg-blue-600 w-full p-4 my-2 text-white">
-          Sign up
+          Sign in
         </button>
       </form>
     </div>
