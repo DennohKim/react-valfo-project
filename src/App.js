@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Dashboard from './components/Dashboard';
-import ProtectedRoute from './components/ProtectedRoute';
-import Signin from "./components/Signin";
-import Signup from "./components/Signup";
+import Dashboard from './pages/Dashboard';
+import ProtectedRoute from './pages/ProtectedRoute';
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
