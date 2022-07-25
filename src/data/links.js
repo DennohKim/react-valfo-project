@@ -19,11 +19,11 @@ export const links = [
       title: 'Pages',
       links: [
         {
-          name: 'Land',
+          name: 'land',
           icon: <BiLandscape  />,
         },
         {
-          name: 'Residential',
+          name: 'residential',
           icon: <GrHomeRounded />,
         },
         {
