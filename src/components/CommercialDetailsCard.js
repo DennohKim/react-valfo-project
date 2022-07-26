@@ -7,7 +7,9 @@ const CommercialDetailsCard = () => {
         <div id="residential-title-container" className="flex justify-between">
         <h1 id="residential-description">description</h1>
         <h2 id="residential-value-date">date</h2>
-        <a id="delete-btn" className="fill-slate-300 cursor-pointer" href="../pages/Commercial.js"><FontAwesomeIcon icon="fa-solid fa-trash" /></a>
+        <a id="delete-btn" className="fill-slate-300 cursor-pointer" href="../pages/Commercial.js">
+        <FontAwesomeIcon icon="fa-solid fa-trash" />
+        </a>
       </div>
       <div id="commercial-details" className="flex justify-between pt-4 property-detail">
         <p >Property Name:  <br/> <span id="commercial-value" className="font-bold">name</span></p>

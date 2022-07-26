@@ -7,10 +7,10 @@ import { useStateContext } from "../context/ContextProvider";
 
 
 
-import Dashboard from ".";
-import Land from "./Land";
-import Residential from "./Residential";
-import Commercial from "./Commercial";
+import Dashboard from "../pages/Dashboard";
+import Land from "../pages/Land";
+import Residential from "../pages/Residential";
+import Commercial from "../pages/Commercial";
 
 const Layout = () => {
   const { activeMenu } = useStateContext();
