@@ -102,7 +102,7 @@ const LandForm = ({ onAddLand }) => {
                 
                 </div>
                 <div className="flex items-center justify-between">
-                  <input className="bg-[#E62953] hover:bg-[#FF2354] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="submit" value="Add Comparable" type="submit"/>
+                  <input className="bg-[#E62953] hover:bg-[#FF2354] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline  cursor-pointer" id="submit" value="Add Comparable" type="submit"/>
                 </div>
               </form>
     </div>

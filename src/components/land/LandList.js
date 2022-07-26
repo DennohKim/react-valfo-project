@@ -11,9 +11,16 @@ function handleAddLand(newLand){
   setLand([...land, newLand]); 
 }
 
+function handleDeleteLand(deleteLand){
+  const updateLand = land.filter((landComparable) => {
+    return landComparable.id !== deleteLand
+  })
+  setLand(updateLand)
+}
+
 const landList = land.map((landDetail) => {
     return (
-        <LandDetailsCard key={landDetail.id} landDetail={landDetail}/>
+        <LandDetailsCard key={landDetail.id} landDetail={landDetail} onHandleDeleteLand={handleDeleteLand}/>
     )
 
 })
