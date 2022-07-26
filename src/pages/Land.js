@@ -1,4 +1,5 @@
 import React from 'react';
+import LandList from '../components/land/LandList';
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -31,7 +32,7 @@ const Land = () => {
         <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
           <Navbar />
           <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio temporibus vel. Praesentium, fugit! Repellat sint nam quod deleniti ab culpa quis consequuntur distinctio eum dolorem? In aspernatur aut natus.</p>
+           <LandList/>
           </div>
         </div>
       </div>    

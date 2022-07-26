@@ -44,7 +44,7 @@ const Navbar = () => {
           <NavButton
             title="Menu"
             customFunc={() =>
-              setActiveMenu((prevActiveMenu) => !prevActiveMenu)
+              setActiveMenu((activeMenu) => !activeMenu)
             }
             color="blue"
             icon={<AiOutlineMenu />}

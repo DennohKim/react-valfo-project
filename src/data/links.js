@@ -1,5 +1,5 @@
 import {BiLandscape} from "react-icons/bi";
-import { GrHomeRounded} from "react-icons/gr";
+import { BiHome } from "react-icons/bi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { TbBuildingStore } from "react-icons/tb";
 
@@ -24,7 +24,7 @@ export const links = [
         },
         {
           name: 'residential',
-          icon: <GrHomeRounded />,
+          icon: <BiHome />,
         },
         {
           name: 'commercial',
