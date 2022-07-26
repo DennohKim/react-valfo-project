@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Dashboard from './Dashboard';
+
+
 
 const Residential = () => {
   return (
-    <div>Residential</div>
+    <div>
+    <Dashboard />
+    
+    </div>
   )
 }
 
-export default Residential
+export default Residential;
