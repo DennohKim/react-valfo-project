@@ -24,7 +24,7 @@ const CommercialDetailsCard = ({
       <div className="flex justify-between">
         <h1>{description}</h1>
         <h2>{date}</h2>
-        <MdDelete onClick={handleDelete} />
+        <MdDelete onClick={handleDelete} className="fill-slate-400 hover:fill-slate-800 cursor-pointer" />
       </div>
       <div className="flex justify-between pt-4 property-detail">
         <p>

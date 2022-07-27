@@ -15,10 +15,10 @@ const Sidebar = () => {
 
  
   const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
-  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2"
+  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-400 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2"
 
   return (
-    <div className="bg-[#E62953] h-screen md:overflow-hidden md:hover:overflow-auto pb-10">
+    <div className="bg-[#E62953] h-screen md:overflow-hidden md:hover:overflow-auto pb-10 pt-3">
       {activeMenu && (
         <>
           <div className="flex justify-between items-center">
@@ -27,13 +27,13 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <FcBiotech /> <span>Valfo</span>
+              <FcBiotech /> <span className="text-white">Valfo</span>
             </Link>
           </div>
           <div className="mt-10">
             {links.map((mainLink) => (
               <div key={mainLink.title}>
-                <p className="text-gray-400 m-3 mt-4 uppercase">{mainLink.title}</p>
+                <p className="text-gray-300 m-3 mt-4 uppercase">{mainLink.title}</p>
                 {mainLink.links.map((navLink) => (
                 <NavLink to={`/${navLink.name}`} key={navLink.name} onClick={handleCloseSideBar}className={({isActive}) => isActive ? activeLink : normalLink }>
                   {navLink.icon}
