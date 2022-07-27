@@ -53,7 +53,7 @@ const Signin = () => {
                     <label className="py-2 font-medium">Email Address</label>
                     <input
                       onChange={(e) => setEmail(e.target.value)}
-                      className="border p-3"
+                      className="border p-3 rounded"
                       type="email"
                     />
                   </div>
@@ -61,11 +61,11 @@ const Signin = () => {
                     <label className="py-2 font-medium">Password</label>
                     <input
                       onChange={(e) => setPassword(e.target.value)}
-                      className="border p-3"
+                      className="border p-3 rounded"
                       type="password"
                     />
                   </div>
-                  <button className="border border-white bg-white hover:bg-white w-full p-4 my-2 text-black font-bold">
+                  <button className="border border-white bg-white hover:bg-white w-full p-4 my-2 text-black font-bold rounded">
                     Sign In
                   </button>
                 </form>
