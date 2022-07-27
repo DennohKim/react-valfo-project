@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FcBiotech } from "react-icons/fc";
 import { links } from "../data/links";
+// import Logo from "../assets/images/logoicon.png"
 import { useStateContext } from "../context/ContextProvider";
 
 const Sidebar = () => {
@@ -15,7 +16,7 @@ const Sidebar = () => {
 
  
   const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-[#E62953] bg-white text-md m-2';
-  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-white dark:text-white dark:hover:text-white hover:bg-white m-2"
+  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-white dark:text-white dark:hover:text-[#E62953] hover:bg-white hover:text-[#E62953]  m-2"
 
   return (
     <div className="bg-[#E62953] h-screen md:overflow-hidden md:hover:overflow-auto pb-10 pt-3 pl-5">
@@ -27,7 +28,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-600"
             >
-              <FcBiotech /> <span className="text-white">Valfo</span>
+              <FcBiotech  /> <span className="text-white">Valfo</span>
             </Link>
           </div>
           <div className="mt-10">

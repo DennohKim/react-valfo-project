@@ -46,7 +46,7 @@ const Navbar = () => {
             customFunc={() =>
               setActiveMenu((activeMenu) => !activeMenu)
             }
-            color="blue"
+            color="#E62953"
             icon={<AiOutlineMenu />}
           />
         }
