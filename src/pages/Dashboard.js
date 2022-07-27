@@ -34,11 +34,12 @@ const Dashboard = () => {
         >
           <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
             <Navbar />
+            <h1 className="px-12 mx-auto font-bold ">Comparables</h1>
 
-            <div className="px-12 mx-auto my-8 grid grid-cols-3 gap-8">
+            <div className="px-12 mx-auto my-4 grid grid-cols-3 gap-8">
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-[#E62953] hover:text-white">
                 <div>
-                  <p className="pb-3">Land</p>
+                  <p className="pb-3 text-gray-600">Land</p>
                   <p className="font-bold text-4xl ">{land.length}</p>
                 </div>
                 <div className="w-2/6" >
@@ -47,7 +48,7 @@ const Dashboard = () => {
               </div>
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-[#E62953] hover:text-white">
                 <div>
-                  <p className="pb-3">Residential</p>
+                  <p className="pb-3 text-gray-600">Residential</p>
                   <p className="font-bold text-4xl">{residential.length}</p>
                 </div>
                 <div className="w-2/6">
@@ -56,7 +57,7 @@ const Dashboard = () => {
               </div>
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-[#E62953] hover:text-white">
                 <div>
-                  <p className="pb-3">Commercial</p>
+                  <p className="pb-3 text-gray-600">Commercial</p>
                   <p className="font-bold text-4xl">{commercial.length}</p>
                 </div>
                 <div  className="w-2/6" >

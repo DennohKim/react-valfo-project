@@ -83,7 +83,7 @@ const ResidentialForm = ({onAddResidential}) => {
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" value={formData.rent} onChange={handleChange} name="rent" type="number" placeholder="Kshs"/>
                   </div>
                   <div className="mb-4 ">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
                       Date of valuation
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" value={formData.date} onChange={handleChange} name="date" placeholder="" type="date"/>

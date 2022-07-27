@@ -22,8 +22,8 @@ const CommercialDetailsCard = ({
   return (
     <div className="flex flex-col bg-white shadow-md rounded px-8 pt-4 pb-4 mb-4">
       <div className="flex justify-between">
-        <h1>{description}</h1>
-        <h2>{date}</h2>
+        <p>{description}</p>
+        <p>{date}</p>
         <MdDelete onClick={handleDelete} className="fill-slate-400 hover:fill-slate-800 cursor-pointer" />
       </div>
       <div className="flex justify-between pt-4 property-detail">
@@ -48,13 +48,13 @@ const CommercialDetailsCard = ({
         </p>
         <p>
           Service Charge: <br />
-          <span id="service-charge" class="font-bold">
+          <span id="service-charge" className="font-bold">
             {service}
           </span>
         </p>
         <p>
           Value: <br />
-          <span class="font-bold"> {value}</span>
+          <span className="font-bold"> {value}</span>
         </p>
       </div>
     </div>

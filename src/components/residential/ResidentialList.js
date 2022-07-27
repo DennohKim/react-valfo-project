@@ -27,7 +27,7 @@ const residentialList = residential.map((residentialDetail) => {
 
   return (
     <div className='w-11/12 mx-auto my-0'>
-        <h2 className="text-lg font-bold mb-6">Residential Comparables</h2>
+        <div className="text-lg font-bold mb-6">Residential Comparables</div>
         <div className="grid grid-cols-2 gap-10">
         <div><ResidentialForm onAddResidential={handleAddResidential}/></div>
         <div>{residentialList}</div>

@@ -14,18 +14,18 @@ const Sidebar = () => {
   };
 
  
-  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
-  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-400 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2"
+  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-[#E62953] bg-white text-md m-2';
+  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-white dark:text-white dark:hover:text-white hover:bg-white m-2"
 
   return (
-    <div className="bg-[#E62953] h-screen md:overflow-hidden md:hover:overflow-auto pb-10 pt-3">
+    <div className="bg-[#E62953] h-screen md:overflow-hidden md:hover:overflow-auto pb-10 pt-3 pl-5">
       {activeMenu && (
         <>
           <div className="flex justify-between items-center">
             <Link
               to="/dashboard"
               onClick={handleCloseSideBar}
-              className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+              className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-600"
             >
               <FcBiotech /> <span className="text-white">Valfo</span>
             </Link>
@@ -35,7 +35,7 @@ const Sidebar = () => {
               <div key={mainLink.title}>
                 <p className="text-gray-300 m-3 mt-4 uppercase">{mainLink.title}</p>
                 {mainLink.links.map((navLink) => (
-                <NavLink to={`/${navLink.name}`} key={navLink.name} onClick={handleCloseSideBar}className={({isActive}) => isActive ? activeLink : normalLink }>
+                <NavLink to={`/${navLink.name}`} key={navLink.name} onClick={handleCloseSideBar} className={({isActive}) => isActive ? activeLink : normalLink }>
                   {navLink.icon}
                   <span className="capitalize">{navLink.name}</span>
                 </NavLink>

@@ -19,8 +19,8 @@ const ResidentialDetailsCard = ({residentialDetail, onHandleDeleteResidential}) 
   return (
     <div className="flex flex-col bg-white shadow-md rounded px-8 pt-4 pb-4 mb-4">
       <div className="flex justify-between">
-        <h1 id="residential-description">{description}</h1>
-        <h2 id="residential-value-date">{date}</h2>
+        <p id="residential-description">{description}</p>
+        <p id="residential-value-date">{date}</p>
        <MdDelete onClick={handleDelete} className="fill-slate-400 hover:fill-slate-800 cursor-pointer"/>
       </div>
       <div className="flex justify-between pt-4 property-detail">
