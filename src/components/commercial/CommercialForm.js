@@ -44,7 +44,11 @@ const CommercialForm = ({onAddCommercial}) => {
 
     })
     .then(response => response.json())
-    .then((newCommercialComparable) => onAddCommercial(newCommercialComparable))
+    .then(newCommercialComparable => {
+      onAddCommercial(newCommercialComparable)
+      setFormData({...formData, description: "", name: "", reference: "", value:"", area:"", service:"", location:"",
+      date:"", rent:"" })
+    })
   }
 
 

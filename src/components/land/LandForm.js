@@ -13,7 +13,7 @@ const LandForm = ({ onAddLand }) => {
     size:"",
     location:"",
     date:"",
-    details:"",
+    
 
   });
 
@@ -41,7 +41,10 @@ const LandForm = ({ onAddLand }) => {
 
     })
     .then(response => response.json())
-    .then((newLandComparable) => onAddLand(newLandComparable))
+    .then(newLandComparable => {
+      onAddLand(newLandComparable)
+      setFormData({...formData,  description: "", reference: "", value:"", size:"", location:"",date:"" })
+    })
   }
 
 
@@ -89,7 +92,7 @@ const LandForm = ({ onAddLand }) => {
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
                       Date of valuation
                     </label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="date" value={formData.location} onChange={handleChange}  placeholder="" type="date"/>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="date" value={formData.date} onChange={handleChange}  placeholder="" type="date"/>
                   </div>
                 </div>
                 <div className="flex gap-x-8">

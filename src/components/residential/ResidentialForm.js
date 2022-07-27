@@ -40,7 +40,12 @@ const ResidentialForm = ({onAddResidential}) => {
 
     })
     .then(response => response.json())
-    .then((newResidentialComparable) => onAddResidential(newResidentialComparable))
+    .then(newResidentialComparable => {
+      onAddResidential(newResidentialComparable)
+    setFormData({...formData,  description: "", reference: "", value:"", size:"", location:"", date:"", rent:"" })
+
+    })
+      
   }
 
   return (
