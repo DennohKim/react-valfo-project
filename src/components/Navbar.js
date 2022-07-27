@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useStateContext } from "../context/ContextProvider";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";

@@ -18,7 +18,7 @@ const Sidebar = () => {
   const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2"
 
   return (
-    <div className="bg-indigo-500 h-screen md:overflow-hidden md:hover:overflow-auto pb-10">
+    <div className="bg-[#E62953] h-screen md:overflow-hidden md:hover:overflow-auto pb-10">
       {activeMenu && (
         <>
           <div className="flex justify-between items-center">
@@ -27,7 +27,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <FcBiotech /> <span>Chizaa</span>
+              <FcBiotech /> <span>Valfo</span>
             </Link>
           </div>
           <div className="mt-10">

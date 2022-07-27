@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import ResidentialList from "../components/residential/ResidentialList";
 import Sidebar from "../components/Sidebar";
 
 import { useStateContext } from "../context/ContextProvider";
@@ -32,8 +33,7 @@ const Residential = () => {
           <Navbar />
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              distinctio temporibus vel. .
+              <ResidentialList/>
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import CommercialList from '../components/commercial/CommercialList';
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -31,7 +32,7 @@ const Commercial = () => {
         <div className="fixed flex flex-col md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
           <Navbar />
           <div>
-            <p>sit amet consectetur adipisicing elit. Eveniet distinctio temporibus vel. Praesentium, fugit! Repellat sint nam quod deleniti ab culpa quis consequuntur distinctio eum dolorem? In aspernatur aut natus.</p>
+           <CommercialList/>
           </div>
         </div>
       </div>    
