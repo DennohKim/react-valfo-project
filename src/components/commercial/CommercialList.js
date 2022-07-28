@@ -17,6 +17,8 @@ const CommercialList = () => {
     setCommercial(updateCommercial);
   }
 
+  
+
   const commercialList = commercial.map((commercialDetail) => {
     return (
       <CommercialDetailsCard

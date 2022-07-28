@@ -98,9 +98,9 @@ const LandForm = ({ onAddLand }) => {
                 <div className="flex gap-x-8">
                   <div className="mb-4 ">
                     <label className="flex text-gray-700 text-sm font-bold mb-2" htmlFor="Land">
-                      Details
+                      Location
                     </label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="details" value={formData.details} onChange={handleChange}  type="text" placeholder="Property details"/>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="details" value={formData.location} onChange={handleChange}  type="text" placeholder="Property details"/>
                   </div>
                 
                 </div>

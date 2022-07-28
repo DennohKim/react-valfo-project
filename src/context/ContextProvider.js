@@ -12,6 +12,7 @@ export const ContextProvider = ({ children }) => {
   const [commercial, setCommercial] = useState([]);
   const [activeMenu, setActiveMenu] = useState(true);
   const [screenSize, setScreenSize] = useState(undefined);
+  const [search, setSearch ] = useState("");
 
   useEffect(() => {
     fetch(landUrl)
@@ -47,6 +48,8 @@ export const ContextProvider = ({ children }) => {
         landUrl,
         residentialUrl,
         commercialUrl,
+        search,
+        setSearch
        
       }}
     >

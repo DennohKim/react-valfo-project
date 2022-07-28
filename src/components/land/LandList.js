@@ -5,7 +5,7 @@ import LandForm from './LandForm';
 
 const LandList = () => {
 
-const { land, setLand } = useStateContext();
+const { land, setLand, search, setSearch } = useStateContext();
 
 function handleAddLand(newLand){
   setLand([...land, newLand]); 
@@ -18,7 +18,14 @@ function handleDeleteLand(deleteLand){
   setLand(updateLand)
 }
 
-const landList = land.map((landDetail) => {
+function handleSearchChange(event){
+  setSearch(event.target.value)
+}
+
+const landListToDisplay = land.filter((landComparable) => landComparable.location.toLowerCase().includes(search.toLowerCase()));
+
+
+const landList = landListToDisplay.map((landDetail) => {
     return (
         <LandDetailsCard key={landDetail.id} landDetail={landDetail} onHandleDeleteLand={handleDeleteLand}/>
     )
@@ -30,7 +37,10 @@ const landList = land.map((landDetail) => {
         <div className="text-lg font-bold mb-6">Land Comparables</div>
         <div className="grid grid-cols-2 gap-10">
         <div><LandForm onAddLand={handleAddLand}/></div>
-        <div>{landList}</div>
+        <div>
+        <input className="w-full border-2 border-gray-300 pl-3 py-2 mb-2 rounded-md" type="text" name="search" placeholder="Search by location ..." value={search} onChange={handleSearchChange}  />
+        {landList}
+        </div>
 
         </div>
     </div>

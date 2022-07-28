@@ -5,7 +5,7 @@ import { useStateContext } from "../../context/ContextProvider";
 const LandDetailsCard = ({ landDetail, onHandleDeleteLand }) => {
 
   const{ landUrl } = useStateContext();
-  const { id,description, value, reference, size, date, details } = landDetail;
+  const { id,description, value, reference, size, date, location } = landDetail;
 
   function handleDelete(){
     fetch(`${landUrl}/${id}`, {
@@ -36,10 +36,14 @@ const LandDetailsCard = ({ landDetail, onHandleDeleteLand }) => {
             Value: <br />
             <span className="font-bold">{value}</span>
           </p>
-          {/* <p>
-            <span className="font-bold">{details}</span>
-          </p> */}
+                   
         </div>
+        <div>
+          <p>
+            Location: <br />
+            <span className="font-bold">{location}</span>
+          </p>
+          </div>
       </div>
     </>
   );
