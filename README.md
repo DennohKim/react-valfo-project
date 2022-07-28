@@ -2,7 +2,7 @@
 ## By Dennis Kimathi
 
 ## Screenshot
- ![image](./src/assets/images/Login.png)
+ ![image](./src/assets/images/residential.png)
 
  ## Table of Content
  - [Description](#description)
