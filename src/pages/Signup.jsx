@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "../assets/images/logoicon.png"
 import { UserAuth } from "../context/AuthContext";
 
 const Signup = () => {
@@ -38,6 +39,10 @@ const Signup = () => {
             <div className="px-8 mb-4">
               <div className="max-w-[700px] mx-auto my-16 p-4">
                 <div>
+                <div className="pb-10 flex">
+                <img src={logo} alt="valfo" className="mr-6 w-5 h-5" /> <span className="font-bold text-xl ">Valfo</span>
+
+                </div>
                   <h1 className="text-2xl font-bold py-2">
                     Sign up for a free account
                   </h1>
