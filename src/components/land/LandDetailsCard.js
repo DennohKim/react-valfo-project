@@ -18,15 +18,15 @@ const LandDetailsCard = ({ landDetail, onHandleDeleteLand }) => {
   return (
     <>
       <div className="bg-white shadow-md rounded px-8 pt-4 pb-4 mb-4">
-        <div className="flex justify-between pt-4 mb-4">
-          <p>{description}</p>
+        <div className="flex justify-between pt-4 mb-4 border-b-2 border-b-gray pb-2">
+          <p className="font-bold">{description}</p>
           <p>{date}</p>
           <MdDelete onClick={handleDelete} className="fill-slate-400 hover:fill-slate-800 cursor-pointer" />
         </div>
-        <div className="flex justify-between pt-4 mb-4">
+        <div className="flex justify-between pt-2 mb-4 border-b-2 border-gray-200 pb-2">
           <p>
             LR No: <br />
-            <span className="font-bold">{reference}</span>{" "}
+            <span className="font-bold">{reference}</span>
           </p>
           <p>
             Size: <br />

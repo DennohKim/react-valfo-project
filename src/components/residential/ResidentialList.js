@@ -4,7 +4,7 @@ import ResidentialDetailsCard from "./ResidentialDetailsCard";
 import ResidentialForm from "./ResidentialForm";
 
 const ResidentialList = () => {
-  const { residential, setResidential } = useStateContext();
+  const { residential, setResidential, search, setSearch } = useStateContext();
 
   function handleAddResidential(newResidential) {
     setResidential([...residential, newResidential]);
@@ -17,7 +17,13 @@ const ResidentialList = () => {
     setResidential(updateResidential);
   }
 
-  const residentialList = residential.map((residentialDetail) => {
+  function handleSearchChange(event){
+    setSearch(event.target.value)
+  }
+
+  const residentialListToDisplay = residential.filter((residentialComparable) => residentialComparable.location.toLowerCase().includes(search.toLowerCase()));
+
+  const residentialList = residentialListToDisplay.map((residentialDetail) => {
     return (
       <ResidentialDetailsCard
         key={residentialDetail.id}
@@ -34,7 +40,9 @@ const ResidentialList = () => {
         <div>
           <ResidentialForm onAddResidential={handleAddResidential} />
         </div>
-        <div>{residentialList}</div>
+        <div>
+        <input className="w-full border-2 border-gray-300 pl-3 py-2 mb-2 rounded-md" type="text" name="search" placeholder="Search by location ..." value={search} onChange={handleSearchChange}  />
+        {residentialList}</div>
       </div>
     </div>
   );

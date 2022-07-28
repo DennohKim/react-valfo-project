@@ -16,7 +16,7 @@ export const links = [
     },
   
     {
-      title: 'Pages',
+      title: 'Properties',
       links: [
         {
           name: 'land',

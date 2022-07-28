@@ -6,7 +6,7 @@ const ResidentialDetailsCard = ({residentialDetail, onHandleDeleteResidential}) 
 
   const{ residentialUrl } = useStateContext();
 
-  const { id,description, value, reference, area, date, rent } = residentialDetail;
+  const { id,description, value, reference, area, date, rent, location } = residentialDetail;
 
   function handleDelete(){
     fetch(`${residentialUrl}/${id}`, {
@@ -18,12 +18,12 @@ const ResidentialDetailsCard = ({residentialDetail, onHandleDeleteResidential}) 
 
   return (
     <div className="flex flex-col bg-white shadow-md rounded px-8 pt-4 pb-4 mb-4">
-      <div className="flex justify-between">
+      <div className="flex justify-between ">
         <p id="residential-description">{description}</p>
         <p id="residential-value-date">{date}</p>
        <MdDelete onClick={handleDelete} className="fill-slate-400 hover:fill-slate-800 cursor-pointer"/>
       </div>
-      <div className="flex justify-between pt-4 property-detail">
+      <div className="flex justify-between pt-4">
         <p className="">
           LR No: <br />
           <span className="font-bold">
@@ -43,12 +43,21 @@ const ResidentialDetailsCard = ({residentialDetail, onHandleDeleteResidential}) 
           </span>
         </p>
       </div>
-      <div className="flex justify-between pt-4 property-detail">
+      <div className="flex justify-between pt-4">
         <p>
           Rent: <br />
           <span className="font-bold">
             {rent}
           </span>
+        </p>
+        <p>
+          Location: <br />
+          <span className="font-bold">
+            {location}
+          </span>
+        </p>
+        <p>
+        
         </p>
       </div>
     </div>
