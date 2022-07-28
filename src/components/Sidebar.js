@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FcBiotech } from "react-icons/fc";
+// import { FcBiotech } from "react-icons/fc";
 import { links } from "../data/links";
-// import Logo from "../assets/images/logoicon.png"
+import logo from "../assets/images/logoicon.png"
 import { useStateContext } from "../context/ContextProvider";
 
 const Sidebar = () => {
@@ -28,7 +28,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-600"
             >
-              <FcBiotech  /> <span className="text-white">Valfo</span>
+              <img src={logo} alt="valfo"  /> <span className="text-white">Valfo</span>
             </Link>
           </div>
           <div className="mt-10">
