@@ -4,7 +4,7 @@ import CommercialDetailsCard from "./CommercialDetailsCard";
 import CommercialForm from "./CommercialForm";
 
 const CommercialList = () => {
-  const { commercial, setCommercial } = useStateContext();
+  const { commercial, setCommercial, search, setSearch } = useStateContext();
 
   function handleAddCommercial(newCommercial) {
     setCommercial([...commercial, newCommercial]);
@@ -17,9 +17,14 @@ const CommercialList = () => {
     setCommercial(updateCommercial);
   }
 
-  
+  function handleSearchChange(event){
+    setSearch(event.target.value)
+  }
 
-  const commercialList = commercial.map((commercialDetail) => {
+  const commercialListToDisplay = commercial.filter((commercialComparable) => commercialComparable.location.toLowerCase().includes(search.toLowerCase()));
+
+
+  const commercialList = commercialListToDisplay.map((commercialDetail) => {
     return (
       <CommercialDetailsCard
         key={commercialDetail.id}
@@ -36,7 +41,9 @@ const CommercialList = () => {
         <div>
           <CommercialForm onAddCommercial={handleAddCommercial} />
         </div>
-        <div>{commercialList}</div>
+        <div>
+        <input className="w-full border-2 border-gray-300 pl-3 py-2 mb-2 rounded-md" type="text" name="search" placeholder="Search by location ..." value={search} onChange={handleSearchChange}  />
+        {commercialList}</div>
       </div>
     </div>
   );

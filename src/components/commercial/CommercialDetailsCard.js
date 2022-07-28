@@ -8,7 +8,7 @@ const CommercialDetailsCard = ({
 }) => {
   const { commercialUrl } = useStateContext();
 
-  const { id, description, name, value, reference, area, date, rent, service } =
+  const { id, description, name, value, reference, area, date, rent, service, location } =
     commercialDetail;
 
   function handleDelete() {
@@ -42,19 +42,27 @@ const CommercialDetailsCard = ({
       <div className="flex justify-between pt-4 property-detail">
         <p>
           Rent: <br />
-          <span id="commercial-rent" className="font-bold">
+          <span  className="font-bold">
             {rent}
           </span>
         </p>
         <p>
           Service Charge: <br />
-          <span id="service-charge" className="font-bold">
+          <span  className="font-bold">
             {service}
           </span>
         </p>
         <p>
           Value: <br />
           <span className="font-bold"> {value}</span>
+        </p>
+      </div>
+      <div className="flex justify-between pt-4 property-detail">
+        <p>
+          Location: <br />
+          <span className="font-bold">
+            {location}
+          </span>
         </p>
       </div>
     </div>
