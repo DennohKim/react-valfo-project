@@ -21,8 +21,9 @@
 [Go Back to the top](#Valfo)
 ## Features
 
-1. As a valuer, I want to see data on a particular property displayed on a map
-2. As a valuer, I want to  click on a map and add property information to be displayed on a map.
+1. As a valuer, I want to see land comparables in a particular region.
+2. As a valuer, I want to see residential properties comparables in a particular region. 
+3. As a valuer, I want to see commercial properties comparables in a particular region. 
 
 [Go Back to the top](#Valfo)
 
@@ -30,9 +31,9 @@
 
 Use the link to find the project design.
 
-Figma Design -[Valfo-Map-Application](https://www.figma.com/file/Aycibqlg8MyOG1jUykOD3l/Valfo?node-id=573%3A16)
+Figma Design -[Valfo-React-Application](https://www.figma.com/file/Aycibqlg8MyOG1jUykOD3l/Valfo?node-id=573%3A16)
 
-[Go Back to the top](#Valfo Map Application)
+[Go Back to the top](#Valfo)
 
  ###  Requirements
  * Access to  a computer or any other garget
@@ -47,8 +48,11 @@ Figma Design -[Valfo-Map-Application](https://www.figma.com/file/Aycibqlg8MyOG1j
  [Go Back to the top](#Valfo)
 
 ### Technology  Used
-* TAILWINDCSS - which was used to style the User Interface.
-* REACT
+* HTML - Structure the website
+* TAILWINDCSS - To style the User Interface.
+* REACT - Context API for state management
+* FIREBASE - For user authentication 
+
 [Go Back to the top](#Valfo)
 
 ## License
