@@ -39,7 +39,7 @@ const Dashboard = () => {
             <div className="px-12 mx-auto my-4 grid grid-cols-3 gap-8">
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-[#E62953] hover:text-white">
                 <div>
-                  <p className="pb-3 text-gray-600">Land</p>
+                  <p className="pb-3 text-gray-600 hover:text-white">Land</p>
                   <p className="font-bold text-4xl ">{land.length}</p>
                 </div>
                 <div className="w-2/6" >
@@ -48,16 +48,16 @@ const Dashboard = () => {
               </div>
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-[#E62953] hover:text-white">
                 <div>
-                  <p className="pb-3 text-gray-600">Residential</p>
+                  <p className="pb-3 text-gray-600 ">Residential</p>
                   <p className="font-bold text-4xl">{residential.length}</p>
                 </div>
                 <div className="w-2/6">
-                  <BiHome className="w-full fill-slate-600 hover:fill-white" size={40} />
+                  <BiHome className="w-full fill-slate-600" size={40} />
                 </div>
               </div>
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-[#E62953] hover:text-white">
                 <div>
-                  <p className="pb-3 text-gray-600">Commercial</p>
+                  <p className="pb-3 text-gray-600 ">Commercial</p>
                   <p className="font-bold text-4xl">{commercial.length}</p>
                 </div>
                 <div  className="w-2/6" >

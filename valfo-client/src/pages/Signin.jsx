@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logoicon.png"
+import backgroundImage from "../assets/images/bg.png"
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
@@ -22,7 +23,12 @@ const Signin = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" style={{
+      backgroundImage:
+        "url(" +
+        "https://images.unsplash.com/photo-1560440021-33f9b867899d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=659&q=80" +
+        ")",
+    }}>
       <div className="flex justify-center px-6 my-32 text-white">
         <div className="w-full xl:w-3/4 lg:w-11/12 flex">
           <div
